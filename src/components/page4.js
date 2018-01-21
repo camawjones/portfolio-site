@@ -31,10 +31,10 @@ class Page4 extends React.Component {
           <VisibilitySensor onChange={this.onChange} />
           <p className={componentClasses.join(' ')}>{"Don't be shy, say hi!"}</p>
           <div className={componentClassesMail.join(' ')}>
-          <div><i className="fa fa-envelope" aria-hidden="true"></i> camawjones@gmail.com</div>
-          <p><i className="fa fa-phone" aria-hidden="true"></i> +447884063956</p>
+            <div><i className="fa fa-envelope" aria-hidden="true"></i> camawjones@gmail.com</div>
+            <p><i className="fa fa-phone" aria-hidden="true"></i> +447884063956</p>
+          </div>
         </div>
-      </div>
       </section>
     );
   }
