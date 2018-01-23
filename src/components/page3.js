@@ -1,5 +1,6 @@
 import React from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
+import { Link } from 'react-router-dom';
 
 
 
@@ -38,22 +39,26 @@ class ProjectGallery extends React.Component {
       _id: 1,
       title: 'Attack Of The Clunes',
       imageUrl1: '/assets/clunes-laptop.png',
-      caption1: 'This a game I built based on Martin Clunes as every character in the Star Wars universe. Using javascript and jQuery, I implemented collision detection in order to trigger various events.'
+      caption1: 'This a game I built based on Martin Clunes as every character in the Star Wars universe. Using javascript and jQuery, I implemented collision detection in order to trigger various events.',
+      link: 'https://glacial-earth-52489.herokuapp.com/'
     }, {
       _id: 2,
       title: 'Lookalove (Where The Stars Align)',
       imageUrl1: '/assets/lookalovescreen.png',
-      caption1: 'Lookalove (Where The Stars Align) is a full MERN stack mobile-first site that aims to be a dating app for professional lookalikes to find the partner of their dreams!'
+      caption1: 'Lookalove (Where The Stars Align) is a full MERN stack mobile-first site that aims to be a dating app for professional lookalikes to find the partner of their dreams!',
+      link: 'https://serene-anchorage-28490.herokuapp.com/'
     },{
       _id: 3,
       title: 'CharityApp',
       imageUrl1: '/assets/charity-laptop.png',
-      caption1: 'CharityApp was a group fully RESTful MEAN stack project in which we used Google Places API and Google Maps API in order to map out all the registered Charities on our platform. '
+      caption1: 'CharityApp was a group fully RESTful MEAN stack project in which we used Google Places API and Google Maps API in order to map out all the registered Charities on our platform. ',
+      link: 'https://charityapp-cam.herokuapp.com/'
     },{
       _id: 4,
       title: 'Gigl',
       imageUrl1: '/assets/gigl-laptop.png',
-      caption1: 'Using Javascript and EJS I created a fully restful services platform for freelance web designers to upload their portfolios, skills, and for others to review and hire them.'
+      caption1: 'Using Javascript and EJS I created a fully restful services platform for freelance web designers to upload their portfolios, skills, and for others to review and hire them.',
+      link: 'https://gigl-project.herokuapp.com/'
     }
     ];
 
@@ -83,7 +88,7 @@ class ProjectGallery extends React.Component {
                   <img className="arrowsmall" src="/assets/oval-arrow.png" onClick={() => this.increment()} />
                 </div>
                 <div className={componentText.join(' ')}>
-                  <h1 className="projtitle">{slides[this.state.counter].title}</h1>
+                  <a href={slides[this.state.counter].link}><h1 className="projtitle">{slides[this.state.counter].title}</h1></a>
                   <div className="projcaption">
                     {slides[this.state.counter].caption1}
                   </div>
