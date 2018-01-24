@@ -2,7 +2,7 @@
   "name": "Cameron-Jones-Web-Design",
   "version": "1.0.0",
   "description": "A React and Webpack setup for WDI",
-  "main": "bundle.js",
+  "main": "app.js",
   "license": "MIT",
   "engines": {
     "node": "8.x.x"
