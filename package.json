@@ -2,13 +2,14 @@
   "name": "Cameron-Jones-Web-Design",
   "version": "1.0.0",
   "description": "A React and Webpack setup for WDI",
-  "main": "server.js",
+  "main": "bundle.js",
   "license": "MIT",
   "engines": {
     "node": "8.x.x"
   },
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "dependencies": {
     "babel-core": "^6.25.0",
