@@ -31,7 +31,6 @@ class ProjectGallery extends React.Component {
     }
   }
 
-
   render() {
 
     const slides = [{

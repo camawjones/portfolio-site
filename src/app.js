@@ -7,9 +7,9 @@ import VisibilitySensor from 'react-visibility-sensor';
 import 'bootstrap-css-only';
 import './scss/style.scss';
 
-import Navbar from './components/cam';
+import Navbar from './components/navbar';
 import ProjectGallery from './components/page3';
-import LittleBitAnimate from './components/dan';
+import LittleBitAnimate from './components/bitanimate';
 import Page4 from './components/page4';
 
 
