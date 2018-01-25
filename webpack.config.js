@@ -39,7 +39,13 @@ module.exports = {
     hot: true,
     inline: true,
     port: 8000,
-    open: true
+    open: true,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:4000',
+        secure: false
+      }
+    }
   },
   plugins: [HotModuleReplcement, HtmlWebpack, CopyWebpack]
 };
