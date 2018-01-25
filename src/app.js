@@ -165,7 +165,7 @@ path1Animation() {
               <VisibilitySensor onChange={this.onChange} />
               <div className="white-rec">
                 <div className="blue-rec">
-                  Hey, I'm Cam, a fullstack developer who makes pixels look pretty so you don't have to.
+                  Hey, Im Cam, a fullstack developer who makes pixels look pretty so you dont have to.
                   I always aim to create beautiful websites with a great user experience
                   at the heart of every project I do and so if that sounds like something you, a friend or friend of a friend is after then get in touch!
                 </div>
