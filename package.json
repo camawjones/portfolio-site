@@ -4,10 +4,6 @@
   "description": "A React and Webpack setup for WDI",
   "main": "app.js",
   "license": "MIT",
-  "engines": {
-    "node": "8.x.x",
-    "npm": "4.6.1"  
-  },
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack"
