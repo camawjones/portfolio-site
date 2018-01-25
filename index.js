@@ -8,11 +8,11 @@ const { port, env } = require('./config/environment');
 
 
 if('test' !== env) app.use(morgan('dev'));
-app.use(express.static('portfolio-site/public'));
+app.use(express.static(`${__dirname}/public`));
 app.use(bodyParser.json());
 
 
-app.get('/*', (req, res) => res.sendFile('portfolio-site/public/index.html'));
+app.get('/*', (req, res) => res.sendFile(`${__dirname}/public/index.html`));
 
 
 app.listen(port, () => console.log(`Express is listening on port ${port}`));
