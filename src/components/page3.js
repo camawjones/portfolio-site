@@ -1,6 +1,5 @@
 import React from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
-import { Link } from 'react-router-dom';
 
 
 
@@ -74,7 +73,9 @@ class ProjectGallery extends React.Component {
     }
 
     return (
-      <section className="flex align grad-bg" ref={(section) => { this.page4 = section; }}>
+      <section className="flex align grad-bg" ref={(section) => {
+        this.page4 = section;
+      }}>
         <div className="container flex align">
           <h1 className="mywork">My Work</h1>
           <div className="flex align whiterec">
