@@ -157,7 +157,9 @@ path1Animation() {
               <polyline fill="none" stroke="#FEF9FB" strokeLinecap="round" strokeWidth="5" points="695 975.258 720 943 720 943 745 975.258" transform="matrix(1 0 0 -1 -692 978.258)"/>
             </svg>
           </section>
-          <section className="secondPage flex align" ref={(section) => { this.secondPage = section; }} >
+          <section className="secondPage flex align" ref={(section) => {
+            this.secondPage = section;
+          }} >
             <div>
               <LittleBitAnimate show={this.state.show} />
               <VisibilitySensor onChange={this.onChange} />
@@ -173,8 +175,12 @@ path1Animation() {
               <polyline fill="none" stroke="#FEF9FB" strokeLinecap="round" strokeWidth="5" points="695 975.258 720 943 720 943 745 975.258" transform="matrix(1 0 0 -1 -692 978.258)"/>
             </svg>
           </section>
-          <ProjectGallery handleClick={() => this.handleClick(this.page4)} className="page3 flex align" ref={(section) => { this.page3 = section; }}/>
-          <Page4 className="flex align page4" ref={(section) => { this.page4 = section; }}/>
+          <ProjectGallery handleClick={() => this.handleClick(this.page4)} className="page3 flex align" ref={(section) => {
+            this.page3 = section;
+          }}/>
+          <Page4 className="flex align page4" ref={(section) => {
+            this.page4 = section;
+          }}/>
         </main>
       </BrowserRouter>
     );
@@ -183,5 +189,5 @@ path1Animation() {
 
 ReactDOM.render(
   <App />,
-  document.getElementById('root')
+  document.getElementById('app')
 );
