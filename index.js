@@ -10,6 +10,8 @@ app.use(express.static(`${__dirname}/public`));
 
 app.get('/*', (req, res) => res.sendFile(`${__dirname}/public/index.html`));
 
-app.listen(port, () => console.log(`Express is listening on port ${port}`));
+app.listen(port, '0.0.0.0', function() {
+  console.log(`Listening on Port ${port}`);
+});
 
 module.exports = app;

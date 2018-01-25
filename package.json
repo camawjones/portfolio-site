@@ -5,7 +5,8 @@
   "main": "app.js",
   "license": "MIT",
   "engines": {
-    "node": "8.x.x"
+    "node": "5.0.0",
+    "npm": "4.6.1"  
   },
   "scripts": {
     "start": "webpack-dev-server",
