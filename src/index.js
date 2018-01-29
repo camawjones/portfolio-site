@@ -1,16 +1,18 @@
+
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import scrollToComponent from 'react-scroll-to-component';
 import VisibilitySensor from 'react-visibility-sensor';
-
-import 'bootstrap-css-only';
-import './scss/style.scss';
+import ReactDOM from 'react-dom';
 
 import Navbar from './components/navbar';
 import ProjectGallery from './components/page3';
 import LittleBitAnimate from './components/bitanimate';
 import Page4 from './components/page4';
+
+
+import 'bootstrap-css-only';
+import './App.css';
 
 
 class App extends React.Component {
@@ -165,9 +167,8 @@ path1Animation() {
               <VisibilitySensor onChange={this.onChange} />
               <div className="white-rec">
                 <div className="blue-rec">
-                  Hey, Im Cam, a fullstack developer who makes pixels look pretty so you dont have to.
-                  I always aim to create beautiful websites with a great user experience
-                  at the heart of every project I do and so if that sounds like something you are after then get in touch!
+                  {`Hey Im Cam, a fullstack developer who makes pixels look pretty so you dont have to.
+                  Whether you need a bit of tlc for an existing site or a new and beautiful site with all the bells and whistles, help is at hand. For any further info regarding my skills, previous experience or quotes, please don't hesitate to get in touch!`}
                 </div>
               </div>
             </div>
@@ -189,5 +190,5 @@ path1Animation() {
 
 ReactDOM.render(
   <App />,
-  document.getElementById('app')
+  document.getElementById('root')
 );

@@ -8,7 +8,7 @@
 /* Broken Hearts: */
 
 .secondPage {
-  background: url('/assets/images/broken-hearts-blue.jpg') no-repeat center center fixed;
+  background: url('./assets/images/broken-hearts-blue.jpg') no-repeat center center fixed;
   width:100%;
   height:100%;
   display: flex;
@@ -19,7 +19,7 @@
   background: linear-gradient(
       rgba(0, 0, 0, 0.03),
       rgba(0, 0, 0, 0.03)
-    ), url('/assets/images/broken-hearts-blue.jpg') no-repeat center center fixed;
+    ), url('./assets/images/broken-hearts-blue.jpg') no-repeat center center fixed;
   width:100%;
   height:100%;
   display: flex;
@@ -82,6 +82,9 @@ section {
   text-align: center;
 }
 
+.navbar ul {
+  margin: auto;
+}
 .shy {
   visibility: hidden;
   opacity: 0;
@@ -173,9 +176,9 @@ polyline {
   margin-top: 50px;
 }
 
-@import "Page2";
-@import "Page3";
-@import "Page1";
-@import "Responsive";
-@import "Navbar";
-@import "fonts";
+@import "./scss/Page2.scss";
+@import "./scss/Page3.scss";
+@import "./scss/Page1.scss";
+@import "./scss/Responsive.scss";
+@import "./scss/Navbar.scss";
+@import "./scss/fonts.scss";
