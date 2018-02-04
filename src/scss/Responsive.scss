@@ -237,8 +237,9 @@
 }
 
 .projImg {
-  width: 200px;
-  margin: 10px auto;
+  width: auto;
+  height: 130px;
+  margin: 30px auto 10px auto;
 }
 
 .projtitle {
@@ -256,7 +257,7 @@
   font-size: 12px;
   overflow: scroll;
   line-height: 18px;
-  margin: 0px auto;
+  margin: 10px auto;
 }
 
 .arrowright {
@@ -287,7 +288,7 @@
 
 .pinkrec, .rightrec, .leftrec {
   width: 280px;
-  border: 3px solid white;
+  border: 2px solid white;
   height: 500px;
 }
 

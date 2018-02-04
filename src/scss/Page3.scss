@@ -36,12 +36,19 @@
 .rightrec.show {
   margin-left: 15px;
   margin-top: -15px;
+  transition: all 1s ease;
 }
 
 
 .leftrec.show {
   margin-left: -15px;
   margin-top: 15px;
+  transition: all 1s ease;
+}
+
+.leftrec.show.center, .rightrec.show.center {
+  margin-left: 0px;
+  margin-top: 0px;
 }
 
 .middlerec {
@@ -55,7 +62,7 @@
 .projcaption {
   margin: 10% 5% 0 0;
   font-family: 'Akkurat-Mono';
-  font-size: 20px;
+  font-size: 17px;
   color: white;
   height: 300px;
   overflow: scroll;
@@ -114,9 +121,8 @@ a:hover {
   margin: 50px 0 0 0;
   color: #fff;
   animation-delay: 3s;
-  animation: arrow-bounce 2.5s infinite ease-in-out;
-  -webkit-animation: arrow-bounce 2.5s infinite ease-in-out;
-  animation-delay: 4s;
+  animation: arrow-bounce 2s infinite ease-in-out;
+  -webkit-animation: arrow-bounce 2s infinite ease-in-out;
 }
 
 .mywork.show {
@@ -153,6 +159,11 @@ a:hover {
 .projImg.show {
   visibility: visible;
   opacity: 1;
+  transition: all 1s ease;
+}
+
+.projImg.show.hide {
+  opacity: 0;
 }
 
 .proj-text {
@@ -171,6 +182,11 @@ a:hover {
 .proj-text.show {
   opacity: 1;
   visibility: visible;
+  transition: all 1s ease;
+}
+
+.proj-text.show.hide {
+  opacity: 0;
 }
 
 

@@ -21,14 +21,14 @@
 .arrow1 {
   width: 100%;
   position: absolute;
-  bottom: 9%;
+  bottom: 15vh;
   text-align: center;
   margin: 50px 0 0 0;
   color: #fff;
   animation-delay: 3s;
-  animation: arrow-bounce 2.5s infinite ease-in-out;
-  -webkit-animation: arrow-bounce 2.5s infinite ease-in-out;
-  animation-delay: 4s;
+  animation: arrow-bounce 2s infinite ease-in-out;
+  -webkit-animation: arrow-bounce 2s infinite ease-in-out;
+  animation-delay: 3s;
 }
 
 
