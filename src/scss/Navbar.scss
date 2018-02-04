@@ -1,0 +1,32 @@
+.navbar {
+  background-color: white;
+  box-shadow: 2px 2px 2px #EACDD0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.icons {
+  width: 22px;
+  margin: 0 15px;
+  align-items: center;
+}
+
+li.nav-item {
+  display: inline;
+}
+
+.navbar ul {
+  align-items: center;
+  padding: 0;
+  margin: auto;
+}
+
+.icons:hover {
+  filter: hue-rotate(-150deg);
+  transition: hue-rotate 0.5s linear;
+}
+
+ul {
+  line-height: 50px;
+  margin-bottom: 0;
+}
